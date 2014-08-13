@@ -9,7 +9,7 @@ sentence = I18n.t('errors.messages.not_saved', count: resource.errors.count, res
 html = <<-HTML
 
 <div class="alert alert-danger alert-dismissable">
-<button type="button" data-dismiss="alert" aria-hidden="true">&times;</button>
+<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
 <h4>#{sentence}</h4>
 #{messages}
 </div>
