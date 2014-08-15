@@ -16,7 +16,6 @@ gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 gem "paperclip-dropbox", ">= 1.1.7"
 gem "figaro"
 gem 'devise'
-gem 'sqlite3'
 
 group :production do
   gem 'pg'
@@ -24,7 +23,7 @@ group :production do
 end
 
 group :development, :test do
-
+  gem 'sqlite3'
 end
   
 # Use ActiveModel has_secure_password
